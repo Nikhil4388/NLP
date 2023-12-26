@@ -66,3 +66,5 @@ if __name__ == '__main__':
   # env = wrappers.Monitor(env, 'my_awesome_dir')
   env = wrappers.RecordVideo(env, 'my_awesome_dir')
   print("***Final run with final weights***:", play_one_episode(env, params))
+  # close the environment
+  env.env.close()
